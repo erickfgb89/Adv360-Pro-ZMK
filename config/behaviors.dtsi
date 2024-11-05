@@ -1,0 +1,12 @@
+/ {
+    behaviors {
+        tap_dance_shift_capslock: behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_S_CAPS";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPS_LOCK>;
+        };
+    };
+};
