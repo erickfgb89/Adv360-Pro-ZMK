@@ -18,11 +18,11 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
-#define DVORAK 1
-#define QWERTY 2
-#define KEYPAD 3
-#define FN     4
-#define MOD    5
+#define DVORAK 0
+#define QWERTY 1
+#define KEYPAD 2
+#define FN     3
+#define MOD    4
 
 / {
   behaviors {
