@@ -37,9 +37,9 @@
             bindings = <&kp>, <&kp>;
         };
 
-        td_s_caps: td_s_caps {
+        td_s_c: td_s_c {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_S_CAPS";
+            label = "TD_S_C";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
         };
@@ -50,21 +50,21 @@
 
         dvorak_layer {
             bindings = <
-&kp EQUAL   &kp N1         &kp N2          &kp N3          &kp N4            &kp N5  &tog KEYPAD                                                  &mo MOD    &kp N6  &kp N7             &kp N8           &kp N9          &kp N0               &kp MINUS
-&kp TAB     &kp SQT        &kp COMMA       &kp DOT         &kp P             &kp Y   &tog 1                                                       &none      &kp F   &kp G              &kp C            &kp R           &kp L                &kp FSLH
-&kp ESC     &hm LCTRL A    &hm LEFT_ALT O  &hm LEFT_GUI E  &hm LEFT_SHIFT U  &kp I   &none        &kp LCTRL  &kp LALT       &kp RALT   &kp RCTRL  &none      &kp D   &hm RIGHT_SHIFT H  &hm RIGHT_GUI T  &hm LEFT_ALT N  &hm RIGHT_CONTROL S  &kp MINUS
-&td_s_caps  &kp SEMICOLON  &kp Q           &kp J           &kp K             &kp X                           &kp LGUI       &kp RGUI                         &kp B   &kp M              &kp W            &kp V           &kp Z                &kp RSHFT
-&mo 2       &kp GRAVE      &kp BSLH        &kp LEFT        &kp RIGHT                 &kp BSPC     &kp DEL    &kp EQUAL      &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP             &kp DOWN         &kp LBKT        &kp RBKT             &mo FN
+&kp EQUAL  &kp N1         &kp N2          &kp N3          &kp N4            &kp N5  &tog KEYPAD                                                  &mo MOD    &kp N6  &kp N7             &kp N8           &kp N9          &kp N0               &kp MINUS
+&kp TAB    &kp SQT        &kp COMMA       &kp DOT         &kp P             &kp Y   &tog 1                                                       &none      &kp F   &kp G              &kp C            &kp R           &kp L                &kp FSLH
+&kp ESC    &hm LCTRL A    &hm LEFT_ALT O  &hm LEFT_GUI E  &hm LEFT_SHIFT U  &kp I   &none        &kp LCTRL  &kp LALT       &kp RALT   &kp RCTRL  &none      &kp D   &hm RIGHT_SHIFT H  &hm RIGHT_GUI T  &hm LEFT_ALT N  &hm RIGHT_CONTROL S  &kp MINUS
+&td_s_c    &kp SEMICOLON  &kp Q           &kp J           &kp K             &kp X                           &kp LGUI       &kp RGUI                         &kp B   &kp M              &kp W            &kp V           &kp Z                &kp RSHFT
+&mo 2      &kp GRAVE      &kp BSLH        &kp LEFT        &kp RIGHT                 &kp BSPC     &kp DEL    &kp EQUAL      &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP             &kp DOWN         &kp LBKT        &kp RBKT             &mo FN
             >;
         };
 
         qwerty_layer {
             bindings = <
-&kp EQUAL   &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog KEYPAD                                                  &mo MOD    &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB     &kp Q      &kp W     &kp E     &kp R      &kp T   &trans                                                       &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC     &kp A      &kp S     &kp D     &kp F      &kp G   &none        &kp LCTRL  &kp LALT       &kp RALT   &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&td_s_caps  &kp Z      &kp X     &kp C     &kp V      &kp B                           &kp LGUI       &kp RGUI                         &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2       &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC     &kp DEL    &kp EQUAL      &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo FN
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog KEYPAD                                                  &mo MOD    &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &trans                                                       &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none        &kp LCTRL  &kp LALT       &kp RALT   &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&td_s_c    &kp Z      &kp X     &kp C     &kp V      &kp B                           &kp LGUI       &kp RGUI                         &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC     &kp DEL    &kp EQUAL      &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo FN
             >;
         };
 
